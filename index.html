@@ -1,20 +1,22 @@
-<!-- Frondend-Udacity-Intro to HTML and CSS -->
 
 <!DOCTYPE html>
+<!-- Frondend-Udacity-Intro to HTML and CSS -->
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <div class="container">
+    <!-- topbar -->
     <div class="row">
         <div class="col-md-6">
             <img class="title-logo" src="http://placekitten.com/100/100" alt="logo" >
@@ -33,7 +35,8 @@
         <div class="col-md-12">
             <img src="http://placehold.it/1140x350" class="img-responsive">
         </div>
-    <div>
+    </div>
+    <!-- portfolio -->
     <div class="row">
         <div class="col-md-12">
             <h2 class="text-muted">Featured Work</h2>
@@ -41,41 +44,45 @@
     </div>
     <div class="row text-center">
         <div class="col-md-6">
-            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-rq">
-            </a>
+            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-quotes">
             <h3>Random Quotes</h3>
-            <p><a href="https://github.com/llwang8/randomQuoteMachine">Github</a> | <a href=" http://codepen.io/llwang8/pen/QyJNBj ">Web</a></p>
+            <a href="https://github.com/llwang8/randomQuoteMachine">Github</a> | <a href=" http://codepen.io/llwang8/pen/QyJNBj ">Web</a>
+            <br>
         </div>
-            <div class="col-md-6">
-            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-rm">
+        <div class="col-md-6">
+            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-resume">
             <h3>Resume</h3>
-            <p><a href="https://github.com/llwang8/Resume-javascript-project">Github</a> | <a href="#">Web</a></p>
+            <a href="https://github.com/llwang8/Resume-javascript-project">Github</a> | <a href="#">Web</a>
+            <br>
         </div>
     </div>
     <div class="row text-center">
         <div class="col-md-6">
-            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-bt">
+            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-brighton">
             <h3>Brighton Times</h3>
-            <p><a href="https://github.com/llwang8/responsive-web-design">Github</a> | <a href="#">Web</a></p>
+            <a href="https://github.com/llwang8/responsive-web-design">Github</a> | <a href="#">Web</a>
+            <br>
         </div>
         <div class="col-md-6">
-            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-ms">
-            <h3>Movie Store</h3>
-            <p><a href="https://github.com/llwang8/moviestore">Github</a> | <a href="#">Web</a></p>
+            <img src="http://placehold.it/555x300" class="img-responsive" data-toggle="modal" data-target="#project-calculator">
+            <h3>JavaScript Calculator</h3>
+            <a href="https://github.com/llwang8/JavaScript-calculator">Github</a> | <a href="#">Web</a>
+            <br>
         </div>
     </div>
+
 </div>
 
-<!-- modal- project-A -->
-<div class="modal fade" id="project-A" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- modal- project-quotes -->
+<div class="modal fade" id="project-quotes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+        <h4 class="modal-title" id="myModalLabel">Random Quotes</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/555.jpeg">
-        This was my first project in this class. I learned a lot about HTML and CSS.
+        <img class="img-responsive" src="http://placehold.it/555x300">
+        This app is a responsive random quotes machines built with JavaScript, jQuery, HTML, CSS, and Bootstrap.  It show quotes from Confucius, Einstein, Mark Twain, Shakespeare, Cat, and many more.  Some are wise, some motivating, some hilarious, some are just jokes.  Enjoy!!!
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -83,6 +90,62 @@
     </div>
   </div>
 </div>
+
+<!-- modal- project-resume -->
+<div class="modal fade" id="project-resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Resume</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placehold.it/555x300">
+        This is my online resume built with JavaScript, jQuery, HTML, CSS, and Bootstrap after completing Udacity's course 'Intro to JavaScript'.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal- project-brighton -->
+<div class="modal fade" id="project-brighton" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Brighton Times</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placehold.it/555x300">
+        This is a responsive web design project built with JavaScript, HTML, CSS after completing Udacity's course "Responsive Web Design Fundamental".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal- project-calculator -->
+<div class="modal fade" id="project-calculator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">JavaScript Calculator</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placehold.it/555x300">
+        This is JavaScript Calculator built with JavaScript, jQuery, HTML, CSS, and Bootstrap. It imitates a basic calculator (to be continued).
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
